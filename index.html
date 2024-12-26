@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Portfolio</title>
+    <style>
+        :root {
+            --dark-navy: #0b132b;
+            --navy: #1c2541;
+            --slate: #3a506b;
+            --teal: #5bc0be;
+            --cyan: #6fffe9;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--dark-navy);
+            color: white;
+        }
+
+        .header {
+            background: var(--navy);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--cyan);
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: var(--slate);
+            border-radius: 8px;
+        }
+
+        .content-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content-item {
+            padding: 15px;
+            border-bottom: 1px solid var(--teal);
+            transition: all 0.3s ease;
+        }
+
+        .content-item:hover {
+            background: var(--navy);
+            transform: translateX(10px);
+        }
+
+        .content-item a {
+            color: var(--cyan);
+            text-decoration: none;
+            display: block;
+        }
+
+        h1, h2 {
+            color: var(--cyan);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="/api/placeholder/100/100" alt="Student Photo" class="profile-img">
+        <div>
+            <h1>Student information</h1>
+            <p>MSSV: 23130209</p>
+            <p>Class: DH23DTC</p>
+            <p>Group: Group 1</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Content done</h2>
+        <ul class="content-list">
+            <li class="content-item">
+                <a href="https://letrnghia.github.io/index/lab1.html">1. Lab 1</a>
+            </li>
+            <li class="content-item">
+                <a href="https://letrnghia.github.io/index/lab2.html">2. Lab 2</a>
+            </li>
+            <li class="content-item">
+                <a href="https://letrnghia.github.io/lab3/">3. Lab 3</a>
+            </li>
+            <li class="content-item">
+                <a href="https://letrnghia.github.io/lab4/">4. Lab 4</a>
+            </li>
+            <li class="content-item">
+                <a href="https://letrnghia.github.io/lab5/">5. Lab 5</a>
+            </li>
+            <li class="content-item">
+                <a href="https://letrnghia.github.io/lab6/">6. Lab 6</a>
+            </li>
+            <li class="content-item">
+                <a href="#">7. Project 1</a>
+            </li>
+            <li class="content-item">
+                <a href="#">8. Project 2</a>
+            </li>
+            <li class="content-item">
+                <a href="#">9. Project Group</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
